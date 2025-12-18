@@ -173,28 +173,28 @@ python plotting_utils.py
 
 ### 1. Wigner Semicircle (Notebook 02)
 
-- ✅ Empirical eigenvalue densities converge to semicircle as n → ∞
-- ✅ Convergence rate is O(1/√n) for bulk density
-- ✅ Largest eigenvalue fluctuates near edge λ = 2 (Tracy-Widom regime)
-- ✅ GOE and GUE give identical bulk distributions (universality)
+- [PASS] Empirical eigenvalue densities converge to semicircle as n → ∞
+- [PASS] Convergence rate is O(1/√n) for bulk density
+- [PASS] Largest eigenvalue fluctuates near edge λ = 2 (Tracy-Widom regime)
+- [PASS] GOE and GUE give identical bulk distributions (universality)
 
 **Practical Insight**: Matrix size n ≥ 1000 provides excellent match with theory.
 
 ### 2. Marchenko-Pastur (Notebook 03)
 
-- ✅ Sample covariance eigenvalues follow Marchenko-Pastur law
-- ✅ Distribution shape changes dramatically with aspect ratio γ = p/n
-- ✅ Eigenvalues beyond [λ₋, λ₊] indicate **signal** (not noise)
-- ✅ Application to PCA: noise threshold is λ₊!
+- [PASS] Sample covariance eigenvalues follow Marchenko-Pastur law
+- [PASS] Distribution shape changes dramatically with aspect ratio γ = p/n
+- [PASS] Eigenvalues beyond [λ₋, λ₊] indicate **signal** (not noise)
+- [PASS] Application to PCA: noise threshold is λ₊!
 
 **Practical Insight**: For signal detection in high-dimensional data, eigenvalues above (1 + √(p/n))² are statistically significant.
 
 ### 3. Finite-Size Effects (Notebook 04)
 
-- ✅ Integrated squared error decreases as ~ 1/√n
-- ✅ Deviations are largest at **edges**, not in bulk
-- ✅ Cumulative distribution converges faster than density
-- ✅ Both Wigner and Marchenko-Pastur have similar convergence behavior
+- [PASS] Integrated squared error decreases as ~ 1/√n
+- [PASS] Deviations are largest at **edges**, not in bulk
+- [PASS] Cumulative distribution converges faster than density
+- [PASS] Both Wigner and Marchenko-Pastur have similar convergence behavior
 
 **Practical Insight**: 
 - n ≥ 500: Good approximation
@@ -203,10 +203,11 @@ python plotting_utils.py
 
 ### 4. Universality (Notebook 05)
 
-- ✅ Nearest-neighbor spacings follow Wigner surmise (GOE: P(s) ∝ s·exp(-s²))
-- ✅ **Level repulsion**: P(s) → 0 as s → 0 (eigenvalues repel!)
-- ✅ GUE has stronger repulsion than GOE (P(s) ∝ s² vs s)
-- ✅ **Spacing statistics are independent of entry distribution!**
+- [PASS] Nearest-neighbor spacings follow Wigner surmise (GOE: P(s) ∝ s·exp(-s²))
+- [PASS] **Level repulsion**: P(s) → 0 as s → 0 (eigenvalues repel!)
+- [PASS] GUE has stronger repulsion than GOE (P(s) ∝ s² vs s)
+- [PASS] **Spacing statistics are independent of entry distribution!**
+
 
 **Practical Insight**: Local statistics are robust - modeling assumptions don't matter for large matrices. This explains why random matrix theory has such broad applicability.
 

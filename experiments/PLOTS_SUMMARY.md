@@ -1,6 +1,7 @@
 # Generated Plots Summary
 
-✅ **All 5 example plots have been successfully generated!**
+**All 5 example plots have been successfully generated!**
+
 
 ## Files in `experiments/` directory:
 
