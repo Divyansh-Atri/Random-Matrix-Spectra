@@ -254,12 +254,6 @@ This project has gone from **educational introduction** to **research-level expl
 - Universality limits (heavy tails)
 - Structured ensembles (real-world data)
 
-**Suitable for**:
-- Quantitative finance interviews
-- PhD coursework
-- Research projects
-- High-dimensional statistics applications
-
 ---
 
 ## Summary
