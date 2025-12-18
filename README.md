@@ -1,7 +1,7 @@
 # Spectral Theory of Random Matrices: Empirical Study
 
 **Author:** Divyansh Atri  
-**Date:** December 2025
+
 
 A hands-on exploration of eigenvalue distributions in high-dimensional random matrices through computational experiments.
 
@@ -327,31 +327,3 @@ For very large matrices (n > 10000), consider:
 - GPU acceleration
 
 ---
-
-## Acknowledgments
-
-This project was created as a personal exploration of random matrix theory. Code is written from scratch to understand the mathematics deeply.
-
-Inspiration from:
-- Terence Tao's lecture notes
-- Madan Lal Mehta's classic text
-- Percy Deift's work on Riemann-Hilbert methods
-- Tracy and Widom's seminal papers on edge distributions
-
----
-
-## License
-
-This project is for educational purposes. Feel free to use, modify, and share.
-
----
-
-## Contact
-
-**Divyansh Atri**
-
-For questions, suggestions, or discussions about random matrix theory, feel free to open an issue or reach out!
-
----
-
-*"The unreasonable effectiveness of random matrix theory" - the universal laws governing high-dimensional randomness appear across mathematics, physics, and beyond. This project is my attempt to see these patterns emerge empirically.*
