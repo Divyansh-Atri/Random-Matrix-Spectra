@@ -66,7 +66,7 @@ Both laws exhibit **concentration** - eigenvalues concentrate in predictable reg
 
 ### Core Modules (`src/`)
 
-All code is written from scratch in an educational style:
+
 
 #### `matrix_generators.py`
 Hand-written implementations of random matrix ensembles:
@@ -97,13 +97,15 @@ Visualization helpers:
 
 ### Jupyter Notebooks (`notebooks/`)
 
-Five detailed notebooks documenting my exploration:
+Seven detailed notebooks documenting my exploration:
 
 1. **`01_introduction.ipynb`** - Introduction to random matrices, basic examples
 2. **`02_wigner_semicircle.ipynb`** - Deep dive into Wigner law, convergence studies, edge behavior
 3. **`03_marchenko_pastur.ipynb`** - Wishart matrices, varying aspect ratios, signal detection
 4. **`04_finite_size_effects.ipynb`** - Systematic convergence analysis, error quantification
 5. **`05_universality.ipynb`** - Spacing statistics, level repulsion, universality demonstration
+6. **`06_tracy_widom_edge_statistics.ipynb`** - Edge eigenvalue fluctuations, Tracy-Widom distribution, n^(-2/3) scaling
+7. **`07_heavy_tailed_matrices.ipynb`** - Heavy-tailed entry distributions (Cauchy, Student-t), breakdown of universality
 
 ---
 
@@ -145,7 +147,7 @@ jupyter notebook
 # Navigate to notebooks/ directory and open any notebook
 ```
 
-I recommend running notebooks in order (01 → 05) for a progressive understanding.
+I recommend running notebooks in order (01 → 07) for a progressive understanding.
 
 ### Running Core Modules Directly
 
@@ -215,18 +217,6 @@ python plotting_utils.py
 
 ## Theoretical Background
 
-### Why Study Random Matrices?
-
-Random matrix eigenvalues appear in:
-
-1. **Nuclear Physics**: Energy levels of heavy atomic nuclei (Wigner's original motivation!)
-2. **Quantum Chaos**: Distinguishing chaotic vs integrable systems
-3. **High-Dimensional Statistics**: Covariance estimation, PCA, signal detection
-4. **Number Theory**: Zeros of Riemann zeta function exhibit RMT statistics
-5. **Machine Learning**: Generalization, neural network dynamics
-6. **Finance**: Portfolio optimization, correlation matrices
-7. **Wireless Communications**: Channel capacity, MIMO systems
-
 ### Core Concepts
 
 **Empirical Spectral Density**: For matrix H with eigenvalues λ₁, ..., λₙ:
@@ -275,7 +265,9 @@ random-matrix-spectra/
 │   ├── 02_wigner_semicircle.ipynb
 │   ├── 03_marchenko_pastur.ipynb
 │   ├── 04_finite_size_effects.ipynb
-│   └── 05_universality.ipynb
+│   ├── 05_universality.ipynb
+│   ├── 06_tracy_widom_edge_statistics.ipynb
+│   └── 07_heavy_tailed_matrices.ipynb
 └── experiments/                # Generated plots and data
     └── (figures created by notebooks)
 ```
